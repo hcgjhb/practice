@@ -53,8 +53,6 @@ pipeline2 = Pipeline([
 
 
 import mlflow
-mlflow.set_experiment("Practice_exp")
-mlflow.set_tracking_uri("http://localhost:5000")
 
 def log_model_with_mlflow(model, model_name):
     with mlflow.start_run():
